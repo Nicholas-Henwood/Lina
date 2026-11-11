@@ -25,25 +25,6 @@ const HEART_SVG =
   '<svg viewBox="0 0 24 24" width="100%" height="100%" fill="currentColor"><path d="M12 21s-6.7-4.35-9.3-8.04C1 10.5 1.6 7.3 4.2 6.1c1.9-.9 4 .1 4.9 1.7l.9 1.5.9-1.5c.9-1.6 3-2.6 4.9-1.7 2.6 1.2 3.2 4.4 1.5 6.86C18.7 16.65 12 21 12 21z"/></svg>';
 
 /* ----------------------------------------------------------------- */
-/* Photo — try common names/extensions, hide frame if none found      */
-/* ----------------------------------------------------------------- */
-(function loadPhoto() {
-  const img = document.getElementById("usPhoto");
-  if (!img) return;
-  const candidates = [
-    "images/lina.jpg", "images/lina.jpeg", "images/lina.png",
-    "images/us.jpg", "images/us.jpeg", "images/us.png",
-  ];
-  let i = 0;
-  img.onerror = () => {
-    i++;
-    if (i < candidates.length) img.src = candidates[i];
-    else img.closest(".photo").style.display = "none";
-  };
-  img.src = candidates[0];
-})();
-
-/* ----------------------------------------------------------------- */
 /* Floating background hearts                                         */
 /* ----------------------------------------------------------------- */
 (function floatingHearts() {

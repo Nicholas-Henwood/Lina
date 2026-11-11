@@ -5,12 +5,9 @@ A little one-page site that asks Lina on a date. She can't click "No"
 the final screen lets her send the whole plan straight to your WhatsApp,
 or copy it. It also invites her to follow you on Instagram.
 
-## Before you deploy — 2 things to do
+## Before you deploy
 
-1. **Add the photo.** Drop the picture into the `images/` folder and
-   name it exactly `lina.jpg` (if it's missing, the photo frame is hidden).
-
-2. **Add your WhatsApp number.** Open `script.js` and edit the first line:
+**Add your WhatsApp number.** Open `script.js` and edit the first line:
    ```js
    const MY_WHATSAPP = "27000000000";
    ```
