@@ -112,6 +112,7 @@ body {
 .step { display: none; }
 .step--active { display: block; }
 
+/* On the final step, a plain dark backdrop */
 .card.is-date {
   background:
     linear-gradient(rgba(20, 15, 23, 0.90), rgba(20, 15, 23, 0.93)),
@@ -365,11 +366,37 @@ input[type="date"].field {
   text-align: center;
   color: var(--rose);
   font-size: 0.9rem;
-  margin-top: 14px;
-  min-height: 18px;
+  margin-top: 10px;
+  min-height: 0;
   font-weight: 500;
   white-space: pre-line;
 }
+
+/* Instagram follow call-to-action */
+.btn-insta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  padding: 22px 24px;
+  border-radius: 18px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background: linear-gradient(45deg, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%);
+  box-shadow: 0 12px 34px rgba(214, 41, 118, 0.5);
+  transition: transform .15s ease, box-shadow .25s ease;
+  animation: insta-pulse 2.4s ease-in-out infinite;
+}
+.btn-insta:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 16px 44px rgba(214, 41, 118, 0.65); }
+.insta-icon { width: 34px; height: 34px; flex: none; }
+@keyframes insta-pulse {
+  0%, 100% { box-shadow: 0 12px 34px rgba(214, 41, 118, 0.5); }
+  50%      { box-shadow: 0 12px 46px rgba(214, 41, 118, 0.8); }
+}
+@media (prefers-reduced-motion: reduce) { .btn-insta { animation: none; } }
 
 /* ----------------------------------------------------------------- */
 /* Phone screens                                                      */

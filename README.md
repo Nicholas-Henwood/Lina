@@ -1,14 +1,14 @@
 # Date question for Lina 💛
 
 A little one-page site that asks Lina on a date. She can't click "No"
-(it runs away), then she picks the date, the activity, and the food — and
+(it grows the Yes button instead), then she picks the date, the activity, and the food — and
 the final screen lets her send the whole plan straight to your WhatsApp,
-or copy it.
+or copy it. It also invites her to follow you on Instagram.
 
 ## Before you deploy — 2 things to do
 
-1. **Add the photo.** Drop the hug picture into the `images/` folder and
-   name it exactly `lina.jpg`.
+1. **Add the photo.** Drop the picture into the `images/` folder and
+   name it exactly `lina.jpg` (if it's missing, the photo frame is hidden).
 
 2. **Add your WhatsApp number.** Open `script.js` and edit the first line:
    ```js
