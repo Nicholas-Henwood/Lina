@@ -112,11 +112,9 @@ body {
 .step { display: none; }
 .step--active { display: block; }
 
-/* On the final step, the selfie fills the whole card — very faint */
 .card.is-date {
   background:
     linear-gradient(rgba(20, 15, 23, 0.90), rgba(20, 15, 23, 0.93)),
-    url("images/date-bg.jpg") center / cover no-repeat,
     var(--glass);
 }
 
